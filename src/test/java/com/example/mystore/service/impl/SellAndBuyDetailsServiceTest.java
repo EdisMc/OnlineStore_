@@ -34,8 +34,6 @@ class SellAndBuyDetailsServiceTest {
     @Test
     void testLoadUserByUsername_UserExist(){
 
-
-
         UserEntity testUserEntity = new UserEntity().
                 setEmail("test@abv.bg").
                 setLastName("Testov").

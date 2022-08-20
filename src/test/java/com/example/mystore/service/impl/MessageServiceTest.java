@@ -1,6 +1,5 @@
 package com.example.mystore.service.impl;
 
-
 import com.example.mystore.init.TestDataInit;
 import com.example.mystore.model.binding.MessageBindingModel;
 import com.example.mystore.model.entity.MessageEntity;
@@ -21,11 +20,9 @@ import org.mockito.junit.jupiter.MockitoExtension;
 import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
-
 import java.math.BigDecimal;
 import java.util.Set;
 import java.util.stream.Collectors;
-
 import static org.mockito.Mockito.when;
 
 @SpringBootTest

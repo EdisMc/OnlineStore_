@@ -6,7 +6,6 @@ import com.example.mystore.model.entity.enums.LocationEnum;
 import com.example.mystore.model.entity.enums.UserRoleEnum;
 import com.example.mystore.repository.*;
 import org.springframework.stereotype.Component;
-
 import java.math.BigDecimal;
 import java.util.HashSet;
 import java.util.List;
@@ -23,8 +22,6 @@ public class TestDataInit {
     private final UserRoleRepository userRoleRepository;
     private final LocationRepository locationRepository;
     private final MessageRepository messageRepository;
-
-
 
 
     public TestDataInit(UserRepository userRepository, CategoryRepository categoryRepository, ProductRepository productRepository, CommentRepository commentRepository, UserRoleRepository userRoleRepository, LocationRepository locationRepository, MessageRepository messageRepository) {
@@ -173,7 +170,6 @@ public class TestDataInit {
         messageRepository.deleteAll();
         commentRepository.deleteAll();
     }
-
 
 
 }

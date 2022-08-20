@@ -1,9 +1,9 @@
 spring:
   datasource:
     driverClassName: com.mysql.cj.jdbc.Driver
-    url: "jdbc:mysql://localhost:3306/sellBuy?useSSL=false&createDatabaseIfNotExist=true&serverTimezone=UTC&allowPublicKeyRetrieval=true"
+    url: "jdbc:mysql://localhost:3306/my_online_store?useSSL=false&createDatabaseIfNotExist=true&serverTimezone=UTC&allowPublicKeyRetrieval=true"
     username: root
-    password: 6460
+    password: r12345
   jpa:
       hibernate:
         ddl-auto: create-drop
