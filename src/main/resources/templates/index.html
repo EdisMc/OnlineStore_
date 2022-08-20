@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en"
+      xmlns:th="http://www.thymeleaf.org">
+
+<head th:replace="fragments/head::head"></head>
+<body>
+
+<nav th:replace="fragments/navbar.html"></nav>
+
+<div class="jumbotron jumbotron-fluid text-center">
+
+    <div class="d-inline-block">
+        <section class="panel">
+        <img height="130"
+             th:src="@{/images/output-onlinepngtools(16).png}"
+             width="160"/>
+        <h1 class="display-4"><strong> Shop A-Z </strong></h1>
+        </section>
+    </div>
+
+    <div class="row product-list" style="border:solid black">
+        <section class="panel">
+
+            <h4 class=""><strong>Welcome!</strong></h4>
+            <h4 class=""><strong>You can take a look at some of our promotions:</strong></h4>
+        </section>
+            <div class="col-md-4" th:each="product : ${promotions}" th:object="${product}">
+                <section class="panel">
+                    <div class="pro-img-box text-center">
+                        <img class="" height="220" th:src="*{mainPicture}" width="250">
+                    </div>
+                    <a class="pro-title" th:href="@{/products/info/{id}(id=*{id})}">
+                        <strong th:text="*{title}"></strong>
+                    </a>
+                    <p class="price" th:text="|*{price} BGN|">$300.00</p>
+                </section>
+            </div>
+    </div>
+
+    <div class="">
+        <div class="d-inline-block">
+            <div
+                    class="col-md-4">
+                <section class="panel">
+                    <div class="pro-img-box text-center">
+                        <img height="230"
+                             src="https://image.shutterstock.com/image-vector/clothes-icon-set-black-color-260nw-223532182.jpg"
+                             width="260"/>
+                    </div>
+                    <div class="panel-body text-center">
+                        <h4>
+                            <form
+                                    th:action="@{/products/all(category='FASHION')}"
+                                    th:method="post">
+                                <button class="pro-title" type="submit">FASHION</button>
+                            </form>
+                        </h4>
+                    </div>
+                </section>
+            </div>
+        </div>
+
+        <div class="d-inline-block">
+            <div class="col-md-4">
+                <section class="panel">
+                    <div class="pro-img-box text-center">
+                        <img height="230"
+                             src="https://thumbs.dreamstime.com/b/set-doodle-elements-sweet-home-vector-illustrations-interior-household-items-stay-covid-hand-drawing-186739907.jpg"
+                             width="260"/>
+                    </div>
+                    <div class="panel-body text-center">
+                        <h4>
+                            <form th:action="@{/products/all(category='HOUSEHOLD')}"
+                                  th:method="post">
+                                <button class="pro-title" type="submit">HOUSEHOLD</button>
+                            </form>
+                        </h4>
+                    </div>
+                </section>
+            </div>
+        </div>
+
+        <div class="d-inline-block">
+            <div class="col-md-4">
+                <section class="panel">
+                    <div class="pro-img-box text-center">
+                        <img height="230"
+                             th:src="@{/images/fc8ed0_ba45c53400f5419f89767934c232051f~mv2.jpeg}"
+                             width="260"/>
+                    </div>
+                    <div class="panel-body text-center">
+                        <h4>
+                            <form th:action="@{/products/all(category='HEALTHBEAUTY')}"
+                                  th:method="post">
+                                <button class="pro-title" type="submit">HEALTH&BEAUTY</button>
+                            </form>
+                        </h4>
+                    </div>
+                </section>
+            </div>
+        </div>
+
+
+        <div class="">
+
+            <div class="d-inline-block">
+                <div
+                        class="col-md-4">
+                    <section class="panel">
+                        <div class="pro-img-box text-center">
+                            <img height="230"
+                                 src="https://i.pinimg.com/originals/1e/3f/8a/1e3f8a5d34e64577a4f691568e1ed84f.png"
+                                 width="260"/>
+                        </div>
+                        <div class="panel-body text-center">
+                            <h4>
+                                <form
+                                        th:action="@{/products/all(category='ELECTRONICS')}"
+                                        th:method="post">
+                                    <button class="pro-title" type="submit">ELECTRONICS</button>
+                                </form>
+                            </h4>
+                        </div>
+                    </section>
+                </div>
+            </div>
+
+
+            <div class="d-inline-block">
+                <div
+                        class="col-md-4">
+                    <section class="panel">
+                        <div class="pro-img-box text-center">
+                            <img height="230"
+                                 src="https://www.kindpng.com/picc/m/50-506289_book-black-and-white-school-books-clipart-clip.png"
+                                 width="260"/>
+                        </div>
+                        <div class="panel-body text-center">
+                            <h4>
+                                <form
+                                        th:action="@{/products/all(category='BOOKS')}"
+                                        th:method="post">
+                                    <button class="pro-title" type="submit">BOOKS</button>
+                                </form>
+                            </h4>
+                        </div>
+                    </section>
+                </div>
+            </div>
+
+            <div class="d-inline-block">
+                <div
+                        class="col-md-4">
+                    <section class="panel">
+                        <div class="pro-img-box text-center">
+                            <img height="230"
+                                 src="https://asgc.co.nz/images/categories/other_clients.jpg"
+                                 width="260"/>
+                        </div>
+                        <div class="panel-body text-center">
+                            <h4 class="text-center">
+                                <form
+                                        th:action="@{/products/all(category='OTHER')}"
+                                        th:method="post">
+                                    <button class="pro-title" type="submit">OTHERS</button>
+                                </form>
+                            </h4>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer th:replace="fragments/footer::footer"></footer>
+
+    <th:block th:replace="fragments/scripts::scripts">
+
+    </th:block>
+
+</body>
+
+</html>

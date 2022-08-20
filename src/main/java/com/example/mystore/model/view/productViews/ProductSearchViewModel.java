@@ -1,0 +1,23 @@
+package com.example.mystore.model.view.productViews;
+
+public class ProductSearchViewModel extends BaseProductViewModel {
+
+    private String mainPicture;
+
+    public String getMainPicture() {
+        return mainPicture;
+    }
+
+    public ProductSearchViewModel setMainPicture(String mainPicture) {
+        this.mainPicture = mainPicture;
+        return this;
+    }
+
+    @Override
+    public String toString() {
+        return "ProductSearchViewModel{" +
+                "mainPicture='" + mainPicture + '\'' +
+                '}';
+    }
+
+}
