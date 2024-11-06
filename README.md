@@ -16,21 +16,18 @@ An online store application for browsing, managing, and purchasing products. Thi
     Authentication: JWT-based authentication
 
 ## Setup
-
 To get the project running on your local machine:
+1.Clone the repository:
 
-    Clone the repository:
+    git clone https://github.com/EdisMc/OnlineStore_.git
 
-git clone https://github.com/EdisMc/OnlineStore_.git
+2.Install dependencies:
 
-Install dependencies:
+    cd OnlineStore_
+    npm install
 
-cd OnlineStore_
-npm install
+3.Configure environment variables: Create a .env file with the necessary configuration details (e.g., database URI, JWT secret).
 
-Configure environment variables: Create a .env file with the necessary configuration details (e.g., database URI, JWT secret).
-
-Start the server:
+4.Start the server:
 
     npm start
-
