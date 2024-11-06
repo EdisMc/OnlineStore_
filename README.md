@@ -1,5 +1,6 @@
 # OnlineStore
-![image](https://github.com/user-attachments/assets/7af6f1aa-ac42-4828-8943-33a6a025d872)
+![image](https://github.com/user-attachments/assets/e1c542ff-418a-41ae-90a8-e821c8543ebc)
+
 
 ## General Information
 An online store application for browsing, managing, and purchasing products. This project provides a backend API to handle product listings, user accounts, orders, and other functionalities necessary for a fully functional online marketplace.
