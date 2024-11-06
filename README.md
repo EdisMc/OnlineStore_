@@ -6,11 +6,13 @@
 An online store application for browsing, managing, and purchasing products. This project provides a backend API to handle product listings, user accounts, orders, and other functionalities necessary for a fully functional online marketplace.
 
 ## Features
-    Product Management: Add, update, and remove products.
-    User Authentication: Sign up, login, and manage user profiles.
-    Order Processing: Cart functionality, checkout, and order tracking.
-    Admin Interface: Manage inventory and track customer orders.
-    API Documentation: RESTful API for easy integration with frontend clients.
+    Product Management: Add, update, and remove products;
+    User Authentication: Sign up, login, and manage user profiles;
+    User profile section;
+    Favorite products/promotions page;
+    Messaging about products functionality;
+    Statisctis page (for admin users);
+    Data Validation and Error Handling.
 
 ## Technologies Used
     Backend: Java, SpringBoot
