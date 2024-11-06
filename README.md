@@ -3,7 +3,7 @@
 
 
 ## General Information
-An online store application for browsing, managing, and purchasing products. This project provides a backend API to handle product listings, user accounts, orders, and other functionalities necessary for a fully functional online marketplace.
+An online store application for browsing, managing, and purchasing/selling products. This project uses Thymeleaf template engine, REST Services, JS (fetching) to handle product listings, user accounts, orders, and other functionalities necessary for a fully functional online marketplace.
 
 ## Features
     Product Management: Add, update, and remove products;
